@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wow! Signal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+
+        .audio-container {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #e6f3ff;
+            border-radius: 10px;
+        }
+
+        .play-button {
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .play-button:hover {
+            background-color: #45a049;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>The Wow! Signal</h1>
+        <h3>August 15, 1977 - A Cosmic Mystery</h3>
+        
+        <p>The Wow! Signal was a strong narrowband radio signal detected by the Big Ear radio telescope at Ohio State University. It lasted for 72 seconds and has never been detected again.</p>
+        
+        <p>The signal's characteristics matched those predicted for an interstellar communication, coming from the direction of the constellation Sagittarius. Astronomer Jerry R. Ehman circled the signal's code on the computer printout and wrote "Wow!" next to it, giving the signal its name.</p>
+        
+        <p>Despite numerous follow-up attempts, the signal has never been re-detected, and its origin remains unexplained. It continues to be one of the most intriguing events in SETI (Search for Extraterrestrial Intelligence) research history.</p>
+
+        <div class="audio-container">
+            <h3>Listen to the Wow! Signal</h3>
+            <p>Converted audio representation of the signal</p>
+            <button class="play-button" onclick="playAudio()">▶ Play Signal</button>
+            <audio id="wowAudio" src="wow.mp3"></audio>
+        </div>
+    </div>
+
+    <script>
+        function playAudio() {
+            const audio = document.getElementById('wowAudio');
+            audio.play();
+        }
+    </script>
+</body>
+</html>
